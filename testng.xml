@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/MY PROJECTS/DemoSkilledEms">
+        <parameter name="browser" value="chrome"></parameter>
+        <!-- <parameter name="os" value="windows"></parameter>-->
+        <groups>
+            <run>
+                <!-- <include name="sanity"/>
+                <include name="master" -->
+                <include name="regression"/>
+                <exclude name=""></exclude>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="Tests.Test_002"/>
+            <class name="Tests.Test_003"/>
+            <class name="Tests.Test_004">
+            </class>
+        </classes>
+    </test>
+</suite>
