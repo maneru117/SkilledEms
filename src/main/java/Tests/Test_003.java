@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class Test_003 extends BaseClass {
 
 
-    @Test(groups = {"sanity","master"})
+    @Test(groups = {"sanity"})
     public void test3(){
         LoginPage bc = new LoginPage(driver);
         bc.setuserName("skilledems@gmail.com");
